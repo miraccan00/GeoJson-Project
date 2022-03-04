@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Geomap.Models.GeoTable1>
+
+@{
+    ViewData["Title"] = "GetGeo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GetGeo</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Geometry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Propid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paftaadi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Long)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Zo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kmetin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ometin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Umetin)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Geometry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Propid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paftaadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Long)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Zo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kmetin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ometin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Umetin)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Geoid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Geoid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Geoid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

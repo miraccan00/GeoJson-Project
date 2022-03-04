@@ -1,0 +1,80 @@
+{
+	"type": "FeatureCollection",
+	"features": [{
+			"type": "Feature",
+			"id": "1",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							31.182691047152275,
+							40.90523705168815
+						],
+						[
+							31.18149192989938,
+							40.90412481964158
+						]
+					]
+				]
+			},
+			"properties": {
+				"id": 1,
+				"PaftaAdi": "Pafta 1",
+				"long": "31.18284334219379",
+				"lat": "40.90442879051531",
+				"zo": 18,
+				"sp": 0.9,
+				"cur": 1,
+				"ber": -45,
+				"KMetin": "Kısa metin Kısa metin Kısa metin Kısa metin",
+				"OMetin": "Orta Metin Orta Metin  Orta Metin  Orta Metin Orta Metin Orta Metin ",
+				"UMetin": "Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin Uzn Metin "
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "6",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							31.177489367806743,
+							40.905835910804086
+						],
+						[
+							31.17831914966075,
+							40.905814114417666
+						],
+						[
+							31.17828310049663,
+							40.906299082359084
+						],
+						[
+							31.17743774761834,
+							40.90628954650626
+						],
+						[
+							31.177489367806743,
+							40.905835910804086
+						]
+					]
+				]
+			},
+			"properties": {
+				"id": 6,
+				"PaftaAdi": "Orman",
+				"long": "31.177894840523436",
+				"lat": "40.906041718542267",
+				"zo": 18,
+				"sp": 9.0,
+				"cur": 1,
+				"ber": 0,
+				"KMetin": "b",
+				"OMetin": "b",
+				"UMetin": "b"
+			}
+		}
+	]
+}
